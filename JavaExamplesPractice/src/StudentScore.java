@@ -32,9 +32,8 @@ class Student { //클래스 멤버 변수 : 이름, 국어, 영어, 수학, 평균, 학점
 
 	@Override
 	public String toString() {
-		return name + " / " + getAvg() + " / " + getGrade();
+		return name + " / " + getAvg() + " / " + getGrade() + "학점";
 	}
-	
 }
 
 public class StudentScore {
@@ -60,6 +59,5 @@ public class StudentScore {
 		for(Student list : p) {
 			System.out.println(list);
 		}
-		
 	}
 }
