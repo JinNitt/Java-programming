@@ -43,7 +43,7 @@ public class StudentScore {
 		Scanner scanner = new Scanner(System.in);
 		
 		for(int i = 1; i <= 3; i++) {
-			System.out.println("===" + i + "번 학생 정보===");
+			System.out.println("=== " + i + " 번 학생 정보===");
 			System.out.print("이름 : ");
 			String name = scanner.next();
 			System.out.print("국어 점수 : ");
@@ -55,7 +55,7 @@ public class StudentScore {
 			
 			p.add(new Student(name, kor, eng, mat));
 		}
-		System.out.println("===결과===");
+		System.out.println("=== 결과 ===");
 		for(Student list : p) {
 			System.out.println(list);
 		}
