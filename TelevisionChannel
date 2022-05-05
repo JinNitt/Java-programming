@@ -1,0 +1,58 @@
+class Television {
+	private int channel;
+	private int volumn;
+	private boolean turnoff;
+	
+	public Television() {
+		this.channel = 1;
+		this.volumn = 1;
+		this.turnoff = false;
+	}
+	
+	public Television(int channel, int volumn, boolean turnoff) {
+		this.channel = channel;
+		this.volumn = volumn;
+		this.turnoff = turnoff;
+	}
+
+	public int getChannel() {
+		return channel;
+	}
+
+	public void setChannel(int channel) {
+		this.channel = channel;
+	}
+
+	public int getVolumn() {
+		return volumn;
+	}
+
+	public void setVolumn(int volumn) {
+		this.volumn = volumn;
+	}
+
+	public boolean isTurnoff() {
+		return turnoff;
+	}
+
+	public void setTurnoff(boolean turnoff) {
+		this.turnoff = turnoff;
+	}
+
+	@Override
+	public String toString() {
+		return "Television [channel=" + channel + ", volumn=" + volumn + ", turnoff=" + turnoff + "]";
+	}
+	
+}
+public class TelevisionChannel {
+
+	public static void main(String[] args) {
+		Television t1 = new Television(15, 3, true);
+		System.out.print(t1);
+		
+		t1.setChannel(16);
+		t1.setVolumn(2);
+		System.out.print(t1);
+	}
+}
